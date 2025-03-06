@@ -1,0 +1,91 @@
+
+.payment-history-container-right{
+  width: 100%;
+  display: flex;
+}
+.right-profile-wrapper{
+  width: 100%;
+  padding: 0;
+  font-family: sans-serif;
+  
+}
+.teacher-pay-pro{
+  width: 100%;
+  display: flex;
+  
+}
+.teacher-pay-pro .teacher-pay-info{
+  margin-left: 2rem;
+}
+
+.general-info{
+  font-family: sans-serif;
+}
+
+.teacher-pay-pro {
+  background-color: #e9ecef; /* Light background for teacher info */
+  padding: 15px; /* Padding inside the box */
+  border-radius: 8px; /* Rounded corners */
+  margin-bottom: 20px; /* Space below the info box */
+}
+
+.teacher-pay-info {
+  margin: 5px 0; /* Space between lines */
+  font-size: 16px; /* Font size for info */
+  color: #495057; /* Darker color for better visibility */
+}
+
+.payment-history-wrapper {
+  margin-top: 20px; /* Margin at the top */
+  width: 100%;
+}
+
+.teacher-table-container {
+  overflow-x: auto; /* Horizontal scroll for tables */
+  width: 100%;
+}
+
+.teacher-pay-table {
+  width: 100%; /* Full width of the container */
+  border-collapse: collapse; /* Collapse table borders */
+  margin-top: 10px; /* Space above the table */
+}
+
+.teacher-pay-table th,
+.teacher-pay-table td {
+  padding: 12px; /* Padding inside cells */
+  text-align: left; /* Left align text */
+  border-bottom: 1px solid #dee2e6; /* Bottom border for rows */
+}
+
+.payment-box {
+  background-color: #5695da; 
+  color: rgb(255, 255, 255); /* White text for contrast */
+  font-weight: bold; /* Bold font for headers */
+}
+
+.payment-data {
+  color: #212529; /* Dark text for data */
+}
+
+.payment-dataGroup:hover {
+  background-color: #f1f1f1; /* Light background on hover */
+}
+
+.action-btn-btn {
+  cursor: pointer; /* Cursor indicates clickable */
+  width: fit-content;
+}
+
+.action-view {
+  color: #007bff; /* Primary color for icons */
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+.action-view:hover {
+  color: #0056b3; /* Darker shade on hover */
+}
+
+.payment-section {
+  margin-top: 20px; /* Margin above the payment section */
+}

@@ -1,0 +1,293 @@
+/* Styles for success and error messages */
+.success-d {
+  color: green;
+  margin-top: 10px;
+}
+
+.error-d {
+  color: red;
+  margin-top: 10px;
+}
+
+form div {
+  margin-bottom: 10px;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form input {
+  margin-left: 10px;
+}
+
+form button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form button:disabled {
+  background-color: gray;
+}
+
+.document-preview-d {
+  max-width: 200px;
+  max-height: 200px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Success and Error messages */
+.error-d,
+.success-d {
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.error-d {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+.success-d {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+/* Form Styles */
+form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  padding: 1.5rem 0;
+}
+
+label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #555;
+}
+
+.document-input-d {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+input[type="file"] {
+  width: 100%;
+  max-width: 20rem;
+  height: 3rem;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+input[type="file"]:hover {
+  border-color: #007bff;
+}
+
+/* Button Styles */
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:disabled {
+  background-color: #c6d0d8;
+  cursor: not-allowed;
+}
+
+button:hover:enabled {
+  background-color: #0056b3;
+}
+
+/* Image Preview Styles */
+.document-preview-d {
+  max-width: 200px;
+  max-height: 200px;
+  margin-top: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.document-preview-d img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+/* File Input Wrapper */
+input[type="file"] + .preview-container-d {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.preview-container-d span {
+  font-size: 14px;
+  font-weight: 600;
+  color: #007bff;
+}
+
+/* Table Styles */
+.document-table-d {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+}
+
+.document-table-d th,
+.document-table-d td {
+  padding: 12px 16px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.document-table-d th {
+  background-color: #f4f7fc;
+  font-weight: 600;
+}
+
+.document-table-d td {
+  background-color: #ffffff;
+}
+
+.document-table-d input[type="file"] {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+
+/* Image Model */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  position: relative;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.modal-image {
+  max-width: 100%;
+  max-height: 80vh;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+.document-table-d img.document-preview-d {
+  max-width: 150px;
+  height: auto;
+  border-radius: 4px;
+  margin-top: 5px;
+  cursor: pointer;
+
+}
+
+/* Button and other styles */
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+button:disabled {
+  background-color: #c6d0d8;
+  cursor: not-allowed;
+}
+
+button:hover:enabled {
+  background-color: #0056b3;
+}
+
+.error-d {
+  padding: 1rem;
+  background-color: #f8d7da;
+  color: #721c24;
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+}
+
+.success-d {
+  padding: 1rem;
+  background-color: #d4edda;
+  color: #155724;
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+.dashboard-wrapper-d {
+  padding: 1rem;
+}
+
+.dashboard-right-d {
+  padding: 2rem;
+}
+
+form {
+  grid-template-columns: 1fr;
+}
+
+label {
+  font-size: 14px;
+}
+
+button {
+  font-size: 14px;
+  padding: 8px 16px;
+}
+}

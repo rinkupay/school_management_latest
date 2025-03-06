@@ -1,0 +1,108 @@
+/* General Styling */
+.payment-history-wrapper {
+  width: 100%;
+  display: flex;
+}
+
+/* Main Container */
+.payment-history-container {
+  width: 100%;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  background-color: aliceblue;
+  padding: 1rem;
+  flex-wrap: wrap;
+  border-radius: 8px;
+}
+
+/* Left Section */
+.payment-history-container-left {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Student Profile */
+.student-pro {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+  border-radius: 5px;
+  /* background-color: aliceblue; */
+  /* box-shadow: 0 2px 5px rgba(139, 139, 139, 0.3); */
+}
+
+.student-info {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  margin: 0 10px;
+}
+
+/* Right Section */
+.payment-history-container-right {
+  flex: 2.5;
+  min-width: 25rem;
+}
+
+/* Table Section */
+.table-container .table-subsection {
+  width: 100%;
+  padding: 10px;
+}
+
+.table-subsection {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Payment Box */
+.payment-box {
+  width: fit-content;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Payment Data */
+.payment-data {
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  /* color: #666; */
+}
+
+/* Action Buttons */
+.action-btn-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.action-view {
+  cursor: pointer;
+  color: #007bff;
+  transition: color 0.3s ease-in-out;
+}
+
+.action-view:hover {
+  color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .payment-history-container-right .right-profile-wrapper {
+    width: 100vw;
+    overflow-x: auto;
+  }
+
+  .payment-history-container-right .student-table {
+    width: 100%;
+    margin: 15px;
+  }
+}

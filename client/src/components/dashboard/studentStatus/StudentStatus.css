@@ -1,0 +1,117 @@
+.profile-card {
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .profile-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .profile-avatar img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+  
+  .profile-name {
+    font-size: 18px;
+    font-weight: bold;
+    flex: 1;
+    margin-left: 10px;
+  }
+  
+  .report-btn {
+    background: #ffcc00;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .report-btn .icon {
+    margin-right: 5px;
+  }
+  
+  .profile-details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  .profile-details .personal-detail-content{
+  margin: 10px;
+ }
+  
+  .personal-details,
+  .class-details {
+    width: 45%;
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+  }
+  
+  
+  .status {
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .status.active {
+    background: #d4edda;
+    color: #155724;
+  }
+  .status.inactive {
+    background: #d4edda;
+    color: #cf1d1d;
+  }
+  .update-btn {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+
+
+  @media (max-width:800px) {
+
+    .profile-card{
+      width: 100vw;
+    }
+    
+  }
+
+  @media (max-width:600px) {
+
+    .profile-card{
+      width: 100vw;
+    }
+    .profile-details{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+    .personal-details,.class-details{
+      width: 100%;
+      min-width: 8rem;
+    }
+    
+  }
+  

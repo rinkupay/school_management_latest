@@ -1,0 +1,206 @@
+/* General Styling */
+.feeSettings {
+    font-family: "Arial", sans-serif;
+    color: #333;
+  }
+  
+  /* Wrapper */
+  .fee-wrapper {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  /* Left Container */
+  .fee-container-left {
+    width: 15rem;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    background-color: #dad8d8;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Class Switch */
+  .switch-class {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .fee-label.class {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #class {
+    font-size: 14px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+  }
+  
+  .class-options {
+    font-size: 14px;
+  }
+  
+  /* Right Container */
+  .fee-container-right {
+    flex: 1;
+    max-width: 60rem;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    background-color: #dad8d8;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Fee Menus */
+  .fee-menus {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+  }
+  
+  /* Labels & Inputs */
+  .fee-label {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .fee-value {
+    width: 100%;
+    height: 2rem;
+    padding: 0 1rem;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border 0.3s ease-in-out;
+  }
+  
+  .fee-value:focus {
+    border-color: blue;
+  }
+  
+  /* Update Button */
+  .update-btn {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .update-btn-btn {
+    display: flex;
+  }
+  
+  .fee-update {
+    padding: 0.5rem 1rem;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .fee-update:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Fee Collection */
+  .fee-collect {
+    width: 100%;
+    padding: 20px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0;
+  }
+  
+  .fee-collect ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .fee-collect ul li {
+    list-style: none;
+  }
+  
+  /* Checkbox Styling */
+  .checkbox-fee {
+    margin: 0 5px;
+    transform: scale(1.5);
+    cursor: pointer;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .fee-wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .fee-container-right {
+      width: 90%;
+      margin-left: 0;
+    }
+  
+    .fee-menus {
+      justify-content: center;
+      text-align: center;
+    }
+  
+    .fee-label {
+      font-size: 16px;
+    }
+  
+    .fee-value {
+      width: 100%;
+      height: 2.5rem;
+      font-size: 14px;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .fee-wrapper {
+      width: 100vw;
+     
+      /* padding: 0 1rem; */
+    }
+    .fee-container-right{
+      width: 100vw;
+      padding: 0;
+      margin: 0;
+     
+    }
+    .fee-collect{
+      border-radius:0;
+    }
+    .right-fee-wrapper{
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+  
+    .fee-container-left {
+      width: 100%;
+      padding: 1rem;
+      margin: 0;
+    }
+  
+    .fee-value {
+      font-size: 14px;
+    }
+  }
+  

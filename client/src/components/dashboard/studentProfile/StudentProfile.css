@@ -1,0 +1,204 @@
+/* General Wrapper */
+.profile-wrapper {
+    width: 100%;
+    min-height: 100vh;
+    padding: 3rem;
+    background-color: #f4f7f9;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+/* Profile Container */
+.profile-container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    gap: 2rem;
+}
+
+/* Left Sidebar */
+.left-profile-container {
+    flex: 1;
+    max-width: 280px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    position: sticky;
+    top: 3rem;
+    height: fit-content;
+}
+
+.left-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.student-image-name .student-image-name-2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+.student-image-name-2 .student-active-icon{
+    position: absolute;
+    top: 2;
+    right: 20px;
+    
+}
+.general-info{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.general-info .toggle-btn-group{
+    display: flex;
+}
+
+.student-profile-picture {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #ddd;
+}
+
+.student-name {
+    margin-top: 1rem;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.student-add-det {
+    font-size: 14px;
+    color: #666;
+}
+
+.admission-complete {
+    padding: 0.6rem 1rem;
+    background-color: #e74c3c;
+    color: white;
+    font-size: 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.admission-complete:hover {
+    background-color: #c0392b;
+}
+
+/* Right Profile Section */
+.right-profile-container {
+    flex: 3;
+    background-color: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    min-width: 300px;
+}
+
+.profile-heading {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+/* Table Styling */
+.table-container {
+    overflow-x: auto;
+}
+
+.student-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.student-table th,
+.student-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.student-table th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+    color: #333;
+}
+
+.student-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.student-table tr:hover {
+    background-color: #eef1f4;
+}
+
+/* RESPONSIVE DESIGN */
+
+/* Tablet View */
+@media (max-width: 1000px) {
+    .profile-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-profile-container {
+        max-width: 100%;
+        position: relative;
+    }
+
+    .right-profile-container {
+        width: 100%;
+    }
+}
+
+/* Mobile View */
+@media (max-width: 600px) {
+    .right-profile-container{
+        width: 100vw;
+    }
+    .right-profile-wrapper{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+    .right-profile-wrapper .general-info{
+        width: 100%;
+        display: flex;
+        
+    }
+    .profile-wrapper {
+        padding: 1.5rem;
+    }
+
+    .profile-picture {
+        width: 100px;
+        height: 100px;
+    }
+
+    .profile-heading {
+        font-size: 18px;
+    }
+
+    .student-table th,
+    .student-table td {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .admission-complete {
+        width: 100%;
+        text-align: center;
+    }
+}

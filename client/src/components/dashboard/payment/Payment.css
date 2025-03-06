@@ -1,0 +1,226 @@
+
+
+
+  .payment-wrapper{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .payment-wrapper .payment-container{
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    padding: 1rem;
+  
+
+     
+    
+  }
+
+  .fee-checkbox {
+    width: 18px;  /* Adjust width */
+    height: 18px; /* Adjust height */
+    cursor: pointer;
+  }
+  
+
+   .payment-wrapper .payment-container-left{
+    
+    background-color: rgb(255, 255, 255);
+    padding: 0.5rem;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  .dueFee-fetch-btn .deFee-action-btn{
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background-color: tomato;
+    transition: all ease-in-out 0.3s;
+  }
+  .dueFee-fetch-btn .deFee-action-btn.active{
+    background-color: green;
+    color: white;
+    cursor:default;
+  }
+  .dueFee-fetch-btn .deFee-action-btn.active:hover{
+    background-color: green;
+    color: white;
+  }
+  .dueFee-fetch-btn .deFee-action-btn:hover{
+    background-color: rgb(235, 74, 46);
+    transition: all ease-in-out 0.3s;
+  }
+   .payment-wrapper .left-profile{
+    background-color: aliceblue;
+    color: rgb(37, 38, 39);
+    border-radius: 5px;
+    display: flex;
+   
+
+  }
+   .payment-wrapper .left-profile > p{
+    font-family: sans-serif;
+    margin-right: 0.8rem;
+    font-size: 18px;
+  }
+   .payment-wrapper .student-info{
+    font-size: 16px;
+    margin: 10px 0;
+  }
+
+   .payment-wrapper .payment-container-right{
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+    font-family: sans-serif;
+    display: flex;
+    /* flex-wrap: wrap; */
+    
+  }
+   .payment-wrapper .right-profile-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    
+    
+  }
+  .payment-container-right .right-profile-wrapper{
+    width: 50%;
+    /* margin: 5px; */
+    border: 1px solid white;
+    padding: 5px;
+  }
+  .payment-wrapper .table-subsection{
+  display: flex;
+  flex-direction: column;
+
+ }
+
+  .payment-wrapper .payment-element{
+  margin: 20px 0px;
+  display: flex;
+ 
+ 
+ }
+  .payment-wrapper .total-amount{
+  font-weight: 600;
+  color: rgb(71, 59, 59);
+  margin-left: 1.8rem;
+
+ }
+
+  .payment-wrapper .mode{
+  width: 100%;
+  max-width: 50%;
+  min-width: 5rem;
+  height: 2rem;
+  font-size: 15px;
+  outline: none;
+ }
+  .payment-wrapper .mode-option{
+  font-size: 16px;
+ }
+  .payment-wrapper .transaction-id{
+  width: 100%;
+  padding: 0 0.5rem;
+  min-width: 5rem;
+  height: 2rem;
+  font-size: 18px;
+  outline: none;
+ }
+  .payment-wrapper .amount-label{
+  font-size: 17px;
+  font-family: "Roboto",sans-serif;
+  margin-right: 20px;
+ }
+  .payment-wrapper .additional-fee{
+  height: 1rem;
+  width: 1rem;
+  margin-left: 1rem;
+ }
+  .payment-wrapper .amount-value{
+  height: 2rem;
+  width: 100%;
+  max-width: 50%;
+  min-width: 5rem;
+  outline: none;
+  padding: 0 1rem;
+  
+ }
+  .payment-wrapper .pay-btn{
+  /* width: 20%; */
+  padding: 0.5rem 2rem;
+  height: 2rem;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: #0093E9;
+  color: white;
+  cursor: pointer;
+  margin-left: 1rem;
+ }
+ .payment-element .button-col{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+ }
+  .payment-wrapper .pay-btn:hover{
+  background-color: #0b83c9;
+ }
+
+ @media (max-width:800px) {
+  .right-profile-wrapper{
+    width: 100%;
+    display: flex;
+    
+  }
+  .table-container.table-subsection{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+  }
+   .payment-wrapper .payment-container-right{
+
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+     
+   }
+   .payment-section.payment-element.button-col{
+    width: 100%;
+    display: flex;
+    align-items: center;
+   }
+  
+ }
+
+ @media (max-width:800px) {
+  .payment-wrapper{
+    width: 100vw;
+    display: flex;
+    padding: 0;
+  }
+  .payment-container-right{
+    width: 100vw;
+    display: flex;
+    padding: 0;
+  }
+  .table-container.table-subsection{
+width: 100vw;
+margin: 5px;
+  }
+ }

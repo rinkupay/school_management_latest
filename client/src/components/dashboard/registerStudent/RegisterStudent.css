@@ -1,0 +1,268 @@
+.register-container .container {
+    width: 100%;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    background: #6fd5e659;
+    padding: 25px;
+}
+
+.container h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(59, 55, 55);
+    /* font-size: 25px; */
+    margin-bottom: 5px;
+}
+
+.container h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(59, 55, 55);
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.form-wrapper {
+    margin: 15px;
+    width: 100%;
+}
+
+.form {
+    width: 100%;
+}
+.form-item{
+    display: flex;
+    width: 100%;
+}
+
+#studentimage {
+    width: 20rem;
+    height: 3rem;
+    font-size: 16px;
+  
+    border: none;
+    margin-top: 2rem;
+   cursor: pointer;
+    /* display: none; */
+}
+.image{
+    width: 4rem;
+    height: 4rem;
+    max-width: 4rem;
+    min-width: 4rem;   
+    /* border: 5px solid rgb(170, 170, 170); */
+    border-radius: 50%;
+    display: flex;
+    margin-left: 1rem;
+
+
+}
+.image-btn{
+
+    background-color: #1e90ff;
+    margin-left: 1rem;
+    padding: 0.5rem 0.8rem;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+
+}
+.profile-image{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    /* color: Black; */
+    /* font-size: 14px; */
+}
+
+.form-item {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    width: 70%;
+}
+
+.form-item label {
+    width: 150px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-item input {
+    margin: 5px 15px;
+    height: 2.5rem;
+    width: 60%;
+    font-size: 13px;
+    border: 1px black solid;
+    border-radius: 5px;
+    padding-left: 0.5rem;
+    outline: none;
+    /* border: none; */
+    border-color: #1e90ff;
+  
+    
+}
+
+.form-item select {
+    margin: 5px 0px;
+    /* width: max-content; */
+    width: 8rem;
+}
+.date-container{
+
+    width: 20px;
+}
+.date-of-birth{
+    padding: 0 1rem;
+
+}
+.class-item:not(.unstyle){
+    width: 7.8rem;
+    height: 2rem;
+    padding: 0 0.5rem;
+    margin-left: 1rem;
+    
+}
+.section:not(.unstyle){
+    margin: 0;
+
+}
+.section-item{
+    margin-left: 3rem;
+    
+}
+.section-container{
+    
+    margin-left: 2rem;
+}
+.section-container > label{
+    margin-right: 1rem;
+}
+.select-section{
+    width: 8rem;
+    height: 2rem;
+    padding: 0.5rem;
+}
+.bus-fee:not(.unstyle){
+    width: 20px;
+    height: 20px;
+}
+
+
+.genders {
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 16px;
+    font-size: 14px;
+}
+
+.genders input {
+    width: 20px;
+}
+
+hr {
+    margin-top: 15px;
+    margin-bottom: 18px;
+    width: 100%;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.same-perm{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 13px;
+    margin: 5px 105px;
+}
+
+.register {
+    margin: 25px;
+    background: #1e90ff;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 7px 20px;
+    border-radius: 5px;
+    color: #fbfbfb;
+    border: 0;
+    cursor: pointer;
+    
+}
+.register-button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+
+.register:hover {
+    color: #3a3636;
+}
+
+@media screen and (max-width: 640px) {
+    .register-container .container {
+        width: 100%;
+    }
+    .container {
+        width: 100vw;
+        /* padding: 10px 5px; */
+    }
+    .form-wrapper{
+        width: 100vw;
+        overflow: hidden;
+    }
+    .form-wrapper form{
+        width: 100vw;
+    }
+    .form-wrapper .form-item{
+        width: 100%;
+        max-width: 95%;
+    }
+    .image{
+        width: 100%;
+      min-width: 4rem;
+      max-width: 4rem;
+   
+    }
+    .form-item{
+        width: 100vw;
+    }
+  
+    .form-item label {
+        font-size: 14px;
+    }
+    .form-item input {
+        margin: 5px 10px;
+        font-size: 12px;
+        width: 20rem;
+        
+    }
+    .genders {
+        margin-left: 10px;
+        font-size: 13px;
+    }
+    .genders input {
+        width: 15px;
+    }
+    .same-perm{
+
+    font-size: 13px;
+    margin: 5px 50px;
+}
+    .register {
+        margin: 25px;
+        font-size: 15px;
+        padding: 7px 10px;
+    }
+}

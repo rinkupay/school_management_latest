@@ -1,0 +1,110 @@
+
+  
+  .admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    /* margin-top: 20px; */
+  }
+  
+  .admin-table thead {
+    background-color: #857b8b;
+    color: #fff;
+  }
+  
+  .admin-table th,
+  .admin-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+.admin-table-body{
+  margin: 10px 0;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+ .select-row{
+  /* width: 100%; */
+  display: flex;
+  gap: 5px;
+}
+.role-update{
+  height: 1.7rem;
+  margin: 5px;
+}
+  .admin-table th {
+    font-weight: 600;
+  }
+  
+  .admin-table td {
+    color: #555;
+  }
+
+  /* ROLE Select */
+  .role-select{
+    width: 50%;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    outline: none;
+  }
+  /* ROLE UPDATE */
+  .role-update{
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+  }
+  .role-update.delete{
+    background-color: tomato;
+  }
+  
+  /* Optional: Add responsive design */
+  @media (max-width: 768px) {
+    .admin-table thead {
+      display: none;
+    }
+  
+    .admin-table,
+    .admin-table tbody,
+    .admin-table tr,
+    .admin-table td {
+      display: block;
+      width: 100%;
+    }
+    .select-row{
+      width: 100vw;
+      display: flex;
+      flex-direction: row;
+    }
+    .role-select{
+      width: 100%;
+      min-width: 5rem;
+    }
+  
+    .admin-table tr {
+      margin-bottom: 15px;
+    }
+  
+    .admin-table td {
+      text-align: right;
+      padding-left: 50%;
+      position: relative;
+    }
+  
+    .admin-table td::before {
+      content: attr(data-label);
+      position: absolute;
+      left: 0;
+      width: 50%;
+      padding-left: 15px;
+      font-weight: bold;
+      text-align: left;
+    }
+  }
+  

@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.popup-container {
+  width: 100%;
+  /* height: 100%; */
+  position: relative;
+}
+
+.dashboard-wrapper .mobile-navbar {
+  display: none;
+}
+
+.dashboard-left {
+  width: 250px; /* Adjust based on your sidebar width */
+  background-color: #f4f4f4;
+}
+
+
+.dashboard-right {
+ 
+  flex-grow: 1;
+  /* padding-left: 0.7rem; */
+  transition: margin-left 0.3s ease-in-out;
+}
+
+/* Full-width layout when not logged in */
+.dashboard-wrapper.full-width .dashboard-right {
+  width: 100%;
+}
+
+.dashboard-wrapper.full-width .dashboard-left {
+  display: none;
+}
+
+
+@media (max-width:768px) {
+  .dashboard-right {
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+   }
+   .dashboard-wrapper .mobile-navbar {
+    display: block;
+    position: fixed;
+    z-index: 81;
+  }
+  .mobile-navbar-menu{
+    display: block;
+    position: absolute;
+    z-index: 80;
+  }
+}
+@media (max-width: 600px) {
+
+  .dashboard-right {
+   width: 100vw;
+   padding: 0;
+   margin: 0;
+  }
+  .dashboard-left {
+    display: none;
+  }
+  .dashboard-wrapper .mobile-navbar {
+    display: block;
+    position: fixed;
+    z-index: 81;
+  }
+  .mobile-navbar-menu{
+    display: block;
+    position: absolute;
+    z-index: 80;
+  }
+}

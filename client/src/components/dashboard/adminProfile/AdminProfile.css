@@ -1,0 +1,241 @@
+.admin-profile-wrapper{
+    width: 100%;
+    height: auto;
+    font-family: sans-serif;
+}
+
+.admin-profile-container{
+    width: 100%;
+    display: flex;
+    padding: 1rem;
+
+}
+
+.admin-profile-left{
+    display: flex;
+    flex: 1;
+    border-right: 1px solid grey;
+}
+.profile-left-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+.left-profile-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.left-profile-menu > img{
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+.left-profile-menu > h4{
+    margin-top: 10px;
+    color: rgb(75, 67, 67);
+
+}
+.left-profile-menu > p{
+    margin-top: 10px;
+    color: rgb(117, 116, 115);
+
+}
+
+.admin-profile-right{
+    display: flex;
+    flex: 3;
+    margin-left: 20px;
+    width: 100%;
+}
+.profile-right-sub{
+    flex: 1;
+    width: 100%;
+    /* background-color: aqua; */
+    margin-left: 10px;
+}
+.profile-right-container{
+    width: 100%;
+   
+}
+.profile-right-sub-container{
+    width: 100%;
+}
+.admin-menu-container{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    /* margin-bottom: 1rem; */
+    
+    
+}
+.admin-menu{
+    display: flex;
+    flex-direction: column;
+ 
+}
+.gender{
+    margin: 0 10px;
+}
+
+.input-field{
+    height: 2rem;
+    width: fit-content;
+}
+.admin-menu-sub{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+}
+.menu-field{
+    height: 2rem;
+    padding: 0 0.5rem;
+    outline: none;
+    /* border-radius: 5px; */
+}
+.active-edit{
+    border: 1px solid blue;
+   
+}
+.edit-menu{
+    width: 100%;
+    display: flex;
+    /* justify-content: center; */
+  
+}
+.edit-menu >h4{
+    margin-right: 2rem;
+}
+.edit-menu>p{
+    color: blue;
+    cursor: pointer;
+    margin: 0 10px;
+}
+.edit-menu>button{
+    margin: 0 10px;
+    padding: 0.5rem 1rem; 
+    border: none;
+    background-color: tomato;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.edit-menu>button:hover{
+    background-color: rgb(180, 76, 57);
+}
+
+
+@media (max-width: 600px) {
+    /* Ensure the full width and reset unwanted padding/margins */
+    .admin-profile-wrapper {
+        width: 100vw;
+        min-height: 100vh;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f4f7f9;
+    }
+
+    /* Make the profile container full width and stack items */
+    .admin-profile-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        gap: 1rem;
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    /* Adjust left profile section */
+    .admin-profile-left {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        border-right: none;
+        border-bottom: 2px solid #ddd;
+        padding-bottom: 1rem;
+    }
+
+    .profile-left-container {
+        width: 100%;
+    }
+
+    /* Improve profile image styling */
+    .left-profile-menu img {
+        height: 90px;
+        width: 90px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid #007bff;
+    }
+
+    /* Adjust right profile section */
+    .admin-profile-right {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 0;
+    }
+
+    .profile-right-sub {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-right-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    /* Optimize input fields */
+    .input-field {
+        width: 100%;
+        height: 2.5rem;
+        border: 1px solid #d1d1d1;
+        padding: 0.5rem;
+        border-radius: 6px;
+        font-size: 16px;
+    }
+
+    /* Adjust edit menu */
+    .edit-menu {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.8rem;
+        margin-top: 1rem;
+    }
+
+    .edit-menu button {
+        width: 100%;
+        padding: 0.6rem;
+        font-size: 16px;
+    }
+
+    .edit-menu p {
+        text-align: center;
+        font-size: 14px;
+        color: #007bff;
+    }
+}

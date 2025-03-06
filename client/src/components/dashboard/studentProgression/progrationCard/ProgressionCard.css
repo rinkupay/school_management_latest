@@ -1,0 +1,91 @@
+.progression-card {
+    width: 100%;
+    /* padding: 20px; */
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    /* border-radius: 8px; */
+    font-family: Arial, sans-serif;
+  }
+  
+  .progression-card table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .progression-card th, 
+  .progression-card td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  .progression-card th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+  }
+  
+  .progression-card td p {
+    margin: 5px 0;
+  }
+  
+  .progression-card select, 
+  .progression-card input {
+    width: 100%;
+    
+    padding: 6px;
+    margin-top: 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+ 
+  
+  .update-btn {
+    background-color: #4c82af;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 5px;
+    margin-bottom: 1rem;
+  }
+  .update-btn.inactive-cursor {
+ 
+    cursor: not-allowed; /* Makes cursor show as disabled */
+    opacity: 0.6; /* Makes it look inactive */
+  }
+  
+  
+  .correction-btn {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+
+  
+  .update-btn:hover {
+    background-color: #3b6b91;
+  }
+  
+  .correction-btn:hover {
+    background-color: #c9302c;
+  }
+
+  /* MESSAGE */
+ .status-done .done-msg{
+    color: #0e73c5;
+  }
+  .status-done .pending-msg{
+    color: red;
+  }
+
+
+
+  

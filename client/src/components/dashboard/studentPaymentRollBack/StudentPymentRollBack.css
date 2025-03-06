@@ -1,0 +1,73 @@
+.rollback-ssearchWrapper {
+    width: 100%;
+    display: flex;
+    margin-top: 5px;
+  }
+  
+  .rollback-ssearchItem {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .rollback-ssearchName {
+    width: 100%;
+    max-width: 20rem;
+    height: 30px;
+    padding: 0 5px;
+    font-size: 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+  }
+  
+  .rollback-ssearchBtn {
+    width: 5rem;
+    height: 30px;
+    font-size: 1rem;
+    font-family: sans-serif;
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+  
+  .rollback-ssearchBtn:hover {
+    background-color: #e9ecef;
+  }
+
+ 
+  /* Table styling */
+  .rollback-studentTable {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .rollback-table {
+    width: 100%;
+    border-collapse: collapse;  /* Ensures that borders are collapsed for a clean look */
+  }
+  
+  .rollback-table th, .rollback-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .rollback-table th {
+    background-color: #3f8ada;
+    color: white;
+    font-weight: bold;
+  }
+
+
+  .rollback-btn-act{
+    background-color: #3f8ada;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  

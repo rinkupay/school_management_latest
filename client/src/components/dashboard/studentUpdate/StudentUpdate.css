@@ -1,0 +1,274 @@
+.register-container .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 80%; /* Constrained width for better desktop layout */
+    max-width: 1200px; /* Limit the maximum width for large screens */
+    background: #6fd5e659;
+    padding: 30px;
+}
+
+.register-container .register-container.container h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(59, 55, 55);
+    font-size: 30px; /* Increased font size */
+    margin-bottom: 15px;
+}
+
+.register-container .container h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(59, 55, 55);
+    font-size: 24px; /* Increased font size */
+    margin-top: 10px;
+}
+
+.register-container .form-wrapper {
+    margin: 20px;
+    width: 100%;
+}
+
+.register-container .form {
+    width: 100%;
+}
+
+.register-container #studentimage {
+    width: 20rem;
+    height: 3rem;
+    font-size: 16px;
+    border: none;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.register-container .image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    margin-left: 1rem;
+}
+
+.register-container .image-btn {
+    background-color: #1e90ff;
+    margin-left: 1rem;
+    padding: 0.5rem 0.8rem;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+}
+
+.register-container .profile-image {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.register-container p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.register-container .form-item {
+    display: flex;
+    margin: 6px 0;
+    align-items: center;
+    width: 80%; /* Increased width for better spacing */
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Aligns items to the left */
+}
+
+.register-container .form-item label {
+    width: 180px;
+    font-size: 16px; /* Larger font size for readability */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.register-container .form-item input {
+    margin: 5px 15px;
+    height: 2.5rem;
+    width: 60%;
+    font-size: 14px;
+    border: 1px black solid;
+    border-radius: 5px;
+    padding-left: 0.5rem;
+    outline: none;
+    border-color: #1e90ff;
+}
+
+.register-container .form-item select {
+    margin: 5px 0px;
+    width: 12rem; /* Adjust width of select */
+}
+
+.register-container .date-container {
+    width: 100%;
+}
+
+.register-container .date-of-birth {
+    padding: 0 1rem;
+}
+
+.register-container .class-item:not(.unstyle) {
+    width: 100%;
+    max-width: 60%;
+    height: 2.5rem;
+    padding: 0 0.5rem;
+    margin-left: 1rem;
+    margin-top: 10px;
+}
+
+.register-container .class-item-class {
+    width: 12rem;
+    height: 2.5rem;
+    padding: 0 0.5rem;
+    margin: 0 1rem;
+}
+
+.register-container .section:not(.unstyle) {
+    margin: 0;
+}
+
+.register-container .section-item {
+    margin-left: 3rem;
+}
+
+.register-container .section-container {
+    margin-left: 2rem;
+}
+
+.register-container .section-container > label {
+    margin-right: 1rem;
+}
+
+.register-container .select-section {
+    width: 12rem;
+    height: 2rem;
+    padding: 0.5rem;
+}
+
+.register-container .bus-fee:not(.unstyle) {
+    width: 20px;
+    height: 20px;
+}
+
+.register-container .genders {
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 16px;
+    font-size: 16px; /* Increased font size */
+    justify-content: flex-start;
+}
+
+.register-container .genders input {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.register-container hr {
+    margin-top: 15px;
+    margin-bottom: 18px;
+    width: 100%;
+}
+
+.register-container h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.register-container .same-perm {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 14px;
+    margin: 5px 105px;
+}
+
+.register-container .register-btn {
+    margin: 25px;
+    background: #1e90ff;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 20px; /* Increased padding */
+    border-radius: 5px;
+    color: #fbfbfb;
+    border: 0;
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.register-container .register-button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+
+.register-container .register-btn:hover {
+    color: #3a3636;
+}
+
+@media screen and (max-width: 640px) {
+    /* Mobile-specific styles are unchanged */
+    .register-container .container {
+        width: 100vw;
+        padding: 15px 5px;
+    }
+
+    .register-container .form-item label {
+        font-size: 13px;
+        width: auto;
+    }
+
+    .register-container .form-item input {
+        margin: 5px 0;
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .register-container .genders {
+        margin-left: 0;
+        font-size: 12px;
+        justify-content: flex-start;
+    }
+
+    .register-container .genders input {
+        width: 15px;
+        margin-right: 5px;
+    }
+
+    .register-container .same-perm {
+        font-size: 12px;
+        margin: 10px 0;
+    }
+
+    .register-container .register {
+        font-size: 16px;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .register-container .form-item {
+        width: 100%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .register-container .class-item-class,
+    .register-container .select-section,
+    .register-container .date-of-birth {
+        width: 100%;
+    }
+
+    .register-container .class-item:not(.unstyle) {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .register-container .register-button {
+        margin-top: 20px;
+    }
+}

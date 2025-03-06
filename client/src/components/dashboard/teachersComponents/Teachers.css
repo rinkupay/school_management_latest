@@ -1,0 +1,48 @@
+.filter-wrapper{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(233, 235, 235);
+    padding: 0.5rem 1rem;
+    font-family: sans-serif;
+}
+
+.filter-content{
+margin:  0.5rem;
+display: flex;
+
+align-items: center;
+}
+.fiter-content-sub{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+.teacher-filter-sec{
+    width: 100%;
+    min-width: 7rem;
+    border-radius: 5px;
+}
+.fiter-content-sub .filter-content{
+    margin: 2px;
+}
+
+.filter-content > label{
+  
+}
+
+.filter-content > select{
+
+   
+    padding: 0.2rem 0.5rem;
+    margin-left: 0.5rem;
+}
+
+ .totalStudent{
+    margin-left: 0.5rem;
+}
+
+
+

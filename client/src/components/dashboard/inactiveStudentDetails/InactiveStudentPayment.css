@@ -1,0 +1,349 @@
+
+
+  .inactive-payment-wrapper{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .inactive-payment-container{
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    padding: 1rem;
+  
+
+     
+    
+  }
+
+  .inactive-payment-container-left{
+    
+    background-color: rgb(255, 255, 255);
+    padding: 0.5rem;
+    border-radius: 5px;
+  }
+  .left-profile{
+    background-color: aliceblue;
+    color: rgb(37, 38, 39);
+    border-radius: 5px;
+    display: flex;
+   
+
+  }
+  .left-profile > p{
+    font-family: sans-serif;
+    margin-right: 0.8rem;
+    font-size: 18px;
+  }
+  .student-info{
+    font-size: 16px;
+    margin: 10px 0;
+  }
+
+  .inactive-payment-container-right{
+   width: 100%;
+   
+   display: flex;
+   flex-direction: column;
+    font-family: sans-serif;
+ justify-content: center;
+ align-items: center;
+    
+  }
+  .inactive-right-profile-wrapper{
+    width: 50%;
+    
+    
+  }
+ .table-subsection{
+  display: flex;
+  flex-direction: column;
+
+ }
+ .payment-section{
+  /* margin: 1rem 0; */
+ }
+ .payment-element{
+  margin: 20px 0px;
+  display: flex;
+ 
+ 
+ }
+ .total-amount{
+  font-weight: 600;
+  color: rgb(71, 59, 59);
+  margin-left: 1.8rem;
+ }
+ .amount-label{
+  font-size: 17px;
+  font-family: "Roboto",sans-serif;
+  margin-right: 20px;
+ }
+ .additional-fee{
+  height: 1rem;
+  width: 1rem;
+  margin-left: 1rem;
+ }
+ .amount-value{
+  height: 2rem;
+  outline: none;
+  padding: 0 1rem;
+  
+ }
+ .general-info{
+  display: flex;
+  justify-content: space-betweentst;
+ }
+
+ .button-wrapper{
+
+ }
+ .button-wrapper > button{
+  padding: 0.3rem 0.8rem;
+  margin: 0 5px;
+  cursor: pointer;
+ }
+ .button-wrapper > button:hover{
+  background-color: #499dce;
+  color: white;
+ }
+ .transaction-id{
+  width: 100%;
+  height: 2rem;
+  padding: 0 0.5rem;
+  font-family: sans-serif;
+  font-size: 16px;
+  outline: none;
+ }
+ .pay-btn{
+  /* width: 20%; */
+  padding: 0.5rem 2rem;
+  height: 2rem;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: #0093E9;
+  color: white;
+  cursor: pointer;
+  margin-left: 1rem;
+ }
+ .pay-btn:hover{
+  background-color: #0b83c9;
+ }
+
+ .profile-wrapper{
+    width: 100%;
+    height: auto;
+    padding: 3rem;
+    background-color: rgb(211, 226, 221);
+    
+}
+
+.profile-container{
+    width: 100%;
+    height: 100%;
+    /* background-color: aqua; */
+    display: flex;
+
+
+ 
+}
+
+.left-profile-container{
+    flex: 1;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    min-width: 18rem;
+    height: fit-content;
+    max-width: 18rem;
+    position: sticky;
+    top: 3rem;
+  
+
+}
+.left-wrapper{
+    /* padding: 1rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.image-name{
+    display: flex;
+    justify-content: center;
+    padding: 01rem;
+    flex-direction: column;
+    
+}
+.admission-complete{
+  padding: 0.5rem 0.8rem;
+  background-color: tomato;
+  color: white;
+  border: none;
+  outline:none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+}
+.profile-add-details{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.image-name-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid rgb(218, 218, 218);
+    padding-bottom: 1rem;
+}
+.profile-picture{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+.student-name{
+    margin-top: 1rem;
+    font-size: 18px;
+    color: rgb(90, 82, 82);
+}
+.student-add-det{
+    font-size: 16px;
+    color: rgb(90, 82, 82);
+}
+.right-profile-container{
+    flex: 3;
+    margin-left: 4rem;
+    /* background-color: aquamarine; */
+    min-width: 20rem;
+}
+.right-profile-wrapper{
+    background-color: white;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 5px;
+}
+.profile-heading{
+    margin-left: 1rem;
+    font-size: 18px;
+    font-family: sans-serif;
+    color: rgb(105, 100, 100);
+}
+
+
+
+
+/* Style for General Infromation Table */
+
+.table-container {
+    padding: 20px;
+    display: flex;
+    /* justify-content: center; */
+  }
+  
+  .student-table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+ 
+  .student-table th,
+  .student-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    
+    
+    
+  }
+  .first-box{
+    width: 30%;
+  }
+  .middle-box{
+    width: 2%;
+  }
+  .third-box{
+    width: 100%;
+  }
+  
+  .student-table th {
+    background-color: #f2f2f2;
+    color: black;
+  }
+  
+  .student-table tr:nth-child(even) {
+    /* background-color: #f9f9f9; */
+  }
+  
+  /* .student-table tr:hover {
+    background-color: #ddd;
+  } */
+  
+
+  /* Media Query */
+  @media (max-width:1000px) {
+
+    .profile-container{
+        width: 100%;
+        height: 100%;
+        /* background-color: aqua; */
+        display: flex;
+        flex-direction: column;
+    
+    
+     
+    }
+    .profile-container{
+        width: 100%;
+        height: 100%;
+        /* background-color: aqua; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    
+    
+     
+    }
+    .left-profile-container{
+     margin-bottom: 0.5rem;
+      
+    
+    }
+    .right-profile-container{
+        width: 100%;
+       
+
+    }
+   
+ 
+  }
+
+  @media (max-width:600px) {
+    .inactive-payment-wrapper{
+      width: 100%;
+    }
+    .inactive-payment-container-right{
+      width: 100vw;
+    }
+    .inactive-right-profile-wrapper{
+      width: 100vw;
+    }
+                         
+    .mode {
+      width: 100%;
+      max-width: 90%;
+      padding: 10px;
+      outline: 1px blue;
+      border: 1px blue;
+
+    }
+    
+  }

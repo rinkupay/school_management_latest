@@ -1,0 +1,244 @@
+/* Container for the form */
+.schoolDetail-form-wrapper {
+    width: 100%;
+    height: calc(100vh - 2rem);
+    display: flex;
+    box-sizing: border-box;
+    gap: 20px;
+    padding: 10px;
+    position: relative;
+  }
+  
+  /* Sidebar/Left Column */
+  .schoolDetail-form-wrapper .schoolDetail-col.left {
+    width: 25%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+  }
+  
+  /* Left Sidebar Menu */
+  .schoolDetail-form-wrapper .schoolDetail-col.left .schoolDetail-row-left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .schoolDetail-row-left .school-action-label {
+    width: 100%;
+    font-size: 1rem;
+    color: white;
+    background-color: rgb(87, 197, 173);
+    padding: 0.8rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 10px 0 0 0;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  .schoolDetail-row-left .school-action-label:hover {
+    background-color: rgb(58, 168, 144);
+    transform: translateY(-2px);
+  }
+  
+  .schoolDetail-row-left .school-action-label.active {
+    background-color: rgb(46, 147, 214);
+    color: white;
+    transform: translateY(-2px);
+  }
+  
+  /* Right Column */
+  .schoolDetail-form-wrapper .schoolDetail-col.right {
+    width: 75%;
+    height: 100%;
+    background-color: #f7f7f7;
+    box-sizing: border-box;
+    padding: 20px;
+    overflow-y: auto;
+    border-radius: 8px;
+  }
+  
+  /* Input Fields & Textarea */
+  .schoolDetail-row-right .school-action-input {
+    width: 100%;
+    height: 2.5rem;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    border: 1px solid #e9e9e9;
+    font-size: 1rem;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .schoolDetail-row-right .school-action-input:focus {
+    border: 1px solid rgb(87, 197, 173);
+    box-shadow: 0 0 5px rgba(87, 197, 173, 0.5);
+    outline: none;
+  }
+  
+  .schoolDetail-row-right .school-action-input::placeholder {
+    color: #aaa;
+    font-style: italic;
+  }
+  
+  /* Session Form Styling */
+  .schoolDetail-row-right .session-container {
+    width: 100%;
+  }
+  
+  .session-menu-wrapper {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+  }
+  
+  .session-menu-wrapper .session-menus {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Date Input in Session Menu */
+  .session-menus .input-date {
+    width: 100%;
+    max-width: 100%;
+    min-width: 10rem;
+    height: 2.5rem;
+    border-radius: 8px;
+    border: 1px solid #e9e9e9;
+    padding: 0 10px;
+    font-size: 1rem;
+    transition: border 0.3s ease;
+  }
+  
+  .session-menus .input-date:focus {
+    border: 1px solid rgb(87, 197, 173);
+    outline: none;
+  }
+  
+  /* Label Styling */
+  .schoolDetail-row-right .session-container .label-container {
+    width: 100%;
+    display: flex;
+    margin-bottom: 5px;
+  }
+  
+  .label-container .label-session {
+    font-size: 1.2rem;
+    color: rgb(72, 78, 77);
+    font-weight: bold;
+    margin-right: 10px;
+    text-align: left;
+  }
+
+  /* FOR BUTTON */
+
+  .save-button {
+    padding: 0.8rem 1.5rem;
+    background-color: rgb(87, 197, 173);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  .save-button:hover {
+    background-color: rgb(58, 168, 144);
+    transform: translateY(-2px);
+  }
+  
+  .save-button:focus {
+    outline: none;
+  }
+  
+  /* Success message styling */
+  .success-message {
+    background-color: #28a745;
+    color: white;
+    padding: 1rem;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+
+
+
+
+  /* Container for saved details */
+.saved-school-details,
+.saved-session-details {
+    width: 100%;
+  background-color: #f2f6f8;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 1rem;
+}
+
+.saved-school-details h3,
+.saved-session-details h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.saved-school-details p,
+.saved-session-details p {
+  font-size: 1rem;
+  color: #555;
+}
+  
+  
+  /* Responsive Design: for smaller screens */
+  @media (max-width: 768px) {
+
+    .schoolDetail-form-wrapper .schoolDetail-col.left {
+        width: 100%;
+        height: fit-content;
+      
+      }
+    .schoolDetail-form-wrapper {
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    .schoolDetail-form-wrapper .schoolDetail-col.left {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+  
+    .schoolDetail-form-wrapper .schoolDetail-col.right {
+      width: 100%;
+    }
+  
+    .session-menu-wrapper {
+      gap: 10px;
+    }
+  }
+  
+  /* Smooth transition for the right column */
+  .schoolDetail-row-right {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(232, 237, 240);
+    align-items: flex-start;
+    padding: 15px;
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+  
+  

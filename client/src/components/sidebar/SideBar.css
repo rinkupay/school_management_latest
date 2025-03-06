@@ -1,0 +1,153 @@
+/* Sidebar Container */
+.sidebar-container {
+    width: 220px; /* Reduced from 280px */
+    height: 100vh;
+    background-color: rgb(43, 112, 129);
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Sidebar Header */
+.sidebar-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-family: "Poppins", sans-serif;
+    color: rgb(53, 51, 48);
+    background-color: rgb(223, 223, 223);
+    padding: 0.8rem;
+    font-size: 16px; /* Slightly smaller */
+    font-weight: 600;
+    /* cursor: pointer; */
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Sidebar Menu Wrapper */
+.sidebar-menues {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(43, 112, 129);
+    overflow-y: auto;
+    max-height: calc(100vh - 60px); /* Adjust to fit screen */
+    padding-bottom: 1rem;
+}
+/* Menu Title */
+.menu-title.module{
+    display: flex;
+    justify-content: center;
+    color: white;
+    /* background-color: rgb(47, 109, 90); */
+    font-family: sans-serif;
+    font-size: larger;
+    padding: 10px 5px 0px 0px;
+    border-top: 1px solid white;
+}
+
+/* Sidebar Menu Item */
+.sidebar-menu {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px; /* Slightly smaller */
+    color: white;
+    text-decoration: none;
+    padding: 0.6rem 1rem;
+    transition: background 0.3s ease;
+    border-radius: 6px;
+    margin: 4px 8px;
+}
+
+.sidebar-menu:hover {
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+}
+
+/* Active Sidebar Item */
+.active {
+    background-color: white;
+    color: black;
+    font-weight: 600;
+}
+
+.active:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Logout Button */
+.logout {
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 1rem;
+    margin-top: auto;
+}
+
+/* Sidebar Scrollbar */
+.sidebar-menues::-webkit-scrollbar {
+    width: 5px;
+}
+
+.sidebar-menues::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+}
+
+.sidebar-menues::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+/* RESPONSIVENESS */
+
+/* Tablet & Small Screens */
+@media (max-width: 1024px) {
+    .sidebar-container {
+        width: 180px; /* Reduce for smaller screens */
+    }
+
+    .sidebar-menu {
+        font-size: 13px;
+        padding: 0.5rem 0.8rem;
+    }
+}
+
+/* Mobile Screens */
+@media (max-width: 768px) {
+    .sidebar-container {
+        width: 100%;
+        height: auto;
+        position: relative;
+        box-shadow: none;
+    }
+
+    .sidebar-menues {
+        max-height: none;
+        overflow-y: visible;
+    }
+}
+/* Mobile Screens */
+@media (max-width: 600px) {
+    .sidebar-container {
+        width: 100%;
+        height: auto;
+        position: fixed;
+        box-shadow: none;
+        
+    }
+
+    .sidebar-menues {
+        max-height: none;
+        overflow-y: visible;
+    }
+
+   
+}

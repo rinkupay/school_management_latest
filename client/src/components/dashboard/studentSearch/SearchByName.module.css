@@ -1,0 +1,90 @@
+.ssearchWrapper {
+  width: 100%;
+  display: flex;
+  margin-top: 5px;
+}
+
+.ssearchItem {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ssearchName {
+  width: 100%;
+  max-width: 20rem;
+  height: 30px;
+  padding: 0 5px;
+  font-size: 1rem;
+  border: 1px solid #ced4da;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+.ssearchBtn {
+  width: 5rem;
+  height: 30px;
+  font-size: 1rem;
+  font-family: sans-serif;
+  background-color: #f8f9fa;
+  border: 1px solid #ced4da;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.ssearchBtn:hover {
+  background-color: #e9ecef;
+}
+
+.sstudentTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.sstudentTable th,
+.sstudentTable td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.sstudentTable th {
+  background-color: #3f8ada;
+  color: white;
+  font-weight: bold;
+}
+
+.sstudentTable .sstudentRow:nth-child(even) {
+  background-color: #f0f0f0;
+}
+
+.sstudentTable tr:hover {
+  /* background-color: #ddd; */
+}
+
+.sstudentTable .sstudentData:last-child {
+  text-align: center;
+  cursor: pointer;
+}
+
+.sstudentTable .sstudentData:last-child:hover {
+  background-color: #cecece;
+  color: rgb(37, 121, 218);
+}
+
+@media screen and (max-width: 700px) {
+  .sstudentTable {
+    overflow-x: auto;
+  }
+
+  .ssearchWrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ssearchItem {
+    margin-bottom: 10px;
+  }
+}

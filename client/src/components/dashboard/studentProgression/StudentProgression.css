@@ -1,0 +1,53 @@
+.filter-wrapper{
+    width: 100%;
+    height: auto;
+    display: flex;
+    background-color: rgb(233, 235, 235);
+    padding: 0.5rem 1rem;
+    font-family: sans-serif;
+}
+
+.filter-content{
+margin: 0 0.5rem;
+display: flex;
+
+align-items: center;
+}
+
+
+
+.filter-content > select{
+
+   
+    padding: 0.2rem 0.5rem;
+    margin-left: 0.5rem;
+}
+
+ .totalStudent{
+    margin-left: 0.5rem;
+}
+
+.progression-component {
+    height: calc(100% - 1rem); /* Adjust as needed */
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Spacing between cards */
+    padding: 10px;
+    border: 1px solid #ddd;
+    background: #fff;
+  }
+
+  .progression-component table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .progression-component th, 
+  .progression-component td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+  }
+  
+
