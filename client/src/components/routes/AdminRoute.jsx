@@ -8,10 +8,10 @@ const AdminRoute = ({ children }) => {
   const { isLoggedIn, adminDetails } = useSelector((state) => state.user);
 
 
-  const data = adminDetails?.user;
+  const data = adminDetails?.user || {};
 
   useEffect(() => {
-    if (!adminDetails) {
+    if (!adminDetails || !isLoggedIn) {
       navigate("/");
     } else if (data?.role !== "admin" && data?.role !== "super") {
       navigate(`/profile/${data?._id}`);

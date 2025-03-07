@@ -455,8 +455,6 @@ exports.getSingleTransaction = catchAsyncErrors(async(req,res)=>{
 exports.getTotalTeacherTransactionAmount = catchAsyncErrors(async (req, res) => {
   const { currentMonth, startDate, endDate } = req.query;
 
-  console.log(startDate,endDate)
-  console.log(req.query)
 
   try {
     let totalAmount = 0;

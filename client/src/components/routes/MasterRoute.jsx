@@ -6,13 +6,13 @@ import toast from 'react-hot-toast';
 
 const MasterRoute = ({ children }) => {
   const navigate = useNavigate();
-  const {adminDetails } = useSelector((state) => state.user);
+  const {adminDetails,isLoggedIn } = useSelector((state) => state.user);
 
-  const data = adminDetails?.user;
+  const data = adminDetails?.user || {};
   
   
   useEffect(() => {
-    if (!adminDetails) {
+    if (!adminDetails || !isLoggedIn) {
       navigate("/");
     } else if (data?.role !== "super" ) {
       navigate(`/profile/${data._id}`);

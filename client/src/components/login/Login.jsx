@@ -11,7 +11,8 @@ import { BsEyeSlash } from "react-icons/bs";
 const Login = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
-  const { isLoggedIn, error, loading } = useSelector((state) => state.user);
+  const { adminDetails, loading,isLoggedIn } = useSelector((state) => state.user);
+
 
   const [user, setUser] = useState({
     email: "",
@@ -59,10 +60,10 @@ const Login = () => {
 
   // Redirect to dashboard if logged in
   useEffect(() => {
-    if (!loading && isLoggedIn) {
-      navigate("/dashboard");
+    if (adminDetails && adminDetails.user.email && isLoggedIn) {
+      navigate("/statistics");
     }
-  }, [isLoggedIn,navigate]);
+  }, [adminDetails, navigate]);
 
   return (
     <>
