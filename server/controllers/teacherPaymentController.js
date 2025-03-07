@@ -31,7 +31,7 @@ exports.duePayment = catchAsyncErrors(async (req, res) => {
 
     const schoolDetail = await SchoolDetails.findOne()
 
-    console.log(schoolDetail)
+
    
 
     if(!schoolDetail){
@@ -386,8 +386,77 @@ exports.getSingleTransaction = catchAsyncErrors(async(req,res)=>{
 
 
 // TEACHER TRANSACTION AMOUNT FOR STATISTIC
+// exports.getTotalTeacherTransactionAmount = catchAsyncErrors(async (req, res) => {
+//   const { currentMonth, startDate, endDate } = req.query;
+
+//   try {
+//     let totalAmount = 0;
+//     let filter = {}; // Query filter
+
+//     if (startDate && endDate) {
+//       // Date range filter
+//       const start = new Date(startDate);
+//       const end = new Date(endDate);
+//       end.setHours(23, 59, 59, 999); // Include the full end date
+
+//       filter.date = { $gte: start, $lte: end };
+//     } else if (startDate) {
+//       // Single day filter
+//       const specificDate = new Date(startDate);
+//       filter.date = {
+//         $gte: new Date(specificDate.setHours(0, 0, 0, 0)), // Start of the day
+//         $lte: new Date(specificDate.setHours(23, 59, 59, 999)), // End of the day
+//       };
+//     } else if (currentMonth) {
+//       // Validate and extract year/month
+//       const [year, month] = currentMonth.split("-").map(Number);
+//       if (!year || !month || month < 1 || month > 12) {
+//         return res.status(400).json({
+//           success: false,
+//           message: "Invalid currentMonth format. Expected format: YYYY-MM",
+//         });
+//       }
+
+//       // Construct start and end dates for the month
+//       const startOfMonth = new Date(Date.UTC(year, month - 1, 1)); // First day of the month
+//       const endOfMonth = new Date(Date.UTC(year, month, 0, 23, 59, 59, 999)); // Last day of the month
+
+//       filter.date = { $gte: startOfMonth, $lte: endOfMonth };
+//     }
+
+//     // Fetch payments based on the filter
+//     const payments = await Payment.find(filter);
+
+//     // Calculate payments count
+//     const paymentsCount = payments.length;
+
+//     // Calculate the total transaction amount
+//     totalAmount = payments.reduce((acc, payment) => acc + payment.totalAmount, 0);
+
+//     // Return the response with total amount and payment details
+//     return res.status(200).json({
+//       success: true,
+//       totalAmount,
+//       paymentsCount,
+//       message: paymentsCount ? "Payments retrieved successfully" : "No payments found",
+//     });
+
+//   } catch (error) {
+//     return res.status(500).json({
+//       success: false,
+//       message: "Error calculating total transaction amount",
+//       error: error.message,
+//     });
+//   }
+// });
+
+
+
 exports.getTotalTeacherTransactionAmount = catchAsyncErrors(async (req, res) => {
   const { currentMonth, startDate, endDate } = req.query;
+
+  console.log(startDate,endDate)
+  console.log(req.query)
 
   try {
     let totalAmount = 0;
@@ -449,4 +518,5 @@ exports.getTotalTeacherTransactionAmount = catchAsyncErrors(async (req, res) => 
     });
   }
 });
+
 

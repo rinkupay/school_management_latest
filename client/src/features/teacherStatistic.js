@@ -16,28 +16,26 @@ const fetchTeacherTotalAmount = createAsyncThunk(
     const baseUrl = import.meta.env.VITE_BASE_URL;
 
     try {
-      let url = `${baseUrl}/api/v1/teacher-amount?currentMonth=${currentMonth}`;
+      let url = `${baseUrl}/api/v1/teacher-amount`;
 
       // Append query parameters dynamically
       const queryParams = [];
+      if (currentMonth && currentMonth !== "undefined") queryParams.push(`currentMonth=${currentMonth}`);
       if (startDate) queryParams.push(`startDate=${startDate}`);
       if (endDate) queryParams.push(`endDate=${endDate}`);
+
       if (queryParams.length) url += `?${queryParams.join("&")}`;
 
-     
-
+    
 
       const response = await axios.get(url, { withCredentials: true });
       return response.data;
     } catch (error) {
+      console.error("API Error:", error.response ? error.response.data : error.message); // Debugging
       return rejectWithValue(error.response ? error.response.data : error.message);
     }
   }
 );
-
-
-
-
 
 const fetchTeacherTotalAmountSlice = createSlice({
   name: "amount",
@@ -54,7 +52,7 @@ const fetchTeacherTotalAmountSlice = createSlice({
       .addCase(fetchTeacherTotalAmount.fulfilled, (state, action) => {
         state.status = "fulfilled";
         state.loading = false;
-        state.teacherTotalAmount = action.payload.totalAmount  || 0;
+        state.teacherTotalAmount = action.payload.totalAmount || 0;
         state.teacherPaymentsCount = action.payload.paymentsCount || 0;
         state.error = null;
         state.message = action.payload.message;

@@ -22,15 +22,15 @@ const Register = lazy(() => import("./components/register/Register"));
 const RegisterStudent = lazy(() =>
   import("./components/dashboard/registerStudent/RegisterStudent")
 );
-const InactiveStudentDetails = lazy(() =>
-  import("./components/dashboard/inactiveStudentDetails/InactiveStudentDetails")
-);
-const InactiveStudentUpdate = lazy(() =>
-  import("./components/dashboard/inactiveStudentDetails/InactiveStudentUpdate")
-);
-const InactiveStudentPayment = lazy(() =>
-  import("./components/dashboard/inactiveStudentDetails/InactiveStudentPayment")
-);
+// const InactiveStudentDetails = lazy(() =>
+//   import("./components/dashboard/inactiveStudentDetails/InactiveStudentDetails")
+// );
+// const InactiveStudentUpdate = lazy(() =>
+//   import("./components/dashboard/inactiveStudentDetails/InactiveStudentUpdate")
+// );
+// const InactiveStudentPayment = lazy(() =>
+//   import("./components/dashboard/inactiveStudentDetails/InactiveStudentPayment")
+// );
 
 const Students = lazy(() => import("./components/dashboard/Students"));
 const ActiveStudents = lazy(() =>
@@ -72,6 +72,9 @@ const StudentDueReport = lazy(() =>
 );
 const StudentReport = lazy(() =>
   import("./components/dashboard/studentActiveDeActiveReport/StudentReports")
+);
+const FinancialReport = lazy(() =>
+  import("./components/dashboard/financialReport/FinancialReport")
 );
 
 const SectionShift = lazy(() =>
@@ -194,7 +197,7 @@ const App = () => {
   }, [dispatch]); // Add dispatch to dependencies
 
   useEffect(() => {
-    // dispatch(getSubscription());
+    dispatch(getSubscription());
   }, [dispatch]);
 
   useEffect(() => {
@@ -341,7 +344,7 @@ const App = () => {
             />
 
             {/* ROUTE FOR INACTIVE STUDENT */}
-            <Route
+            {/* <Route
               path="/student-inactive/:id"
               element={
                 <ProtectedRoute>
@@ -350,10 +353,10 @@ const App = () => {
                   </AdminRoute>
                 </ProtectedRoute>
               }
-            />
+            /> */}
 
             {/*  ROUTE FOR ADMISSION FEE PAYMENT   */}
-            <Route
+            {/* <Route
               path="/payment-admission/:id"
               element={
                 <ProtectedRoute>
@@ -362,9 +365,9 @@ const App = () => {
                   </AdminRoute>
                 </ProtectedRoute>
               }
-            />
+            /> */}
 
-            <Route
+            {/* <Route
               path="/inactive-student-update/:id"
               element={
                 <ProtectedRoute>
@@ -373,7 +376,7 @@ const App = () => {
                   </AdminRoute>
                 </ProtectedRoute>
               }
-            />
+            /> */}
 
             <Route
               path="/student/:id"
@@ -436,6 +439,17 @@ const App = () => {
                 <ProtectedRoute>
                   <AdminRoute>
                     <StudentReport />
+                  </AdminRoute>
+                </ProtectedRoute>
+              }
+            />
+
+            <Route
+              path="/financial-report"
+              element={
+                <ProtectedRoute>
+                  <AdminRoute>
+                    <FinancialReport />
                   </AdminRoute>
                 </ProtectedRoute>
               }

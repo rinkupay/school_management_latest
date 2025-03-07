@@ -107,6 +107,9 @@ const SideBar = ({ setIsMenu }) => {
   const handleSectionShift = () => {
     setIsMenu(false);
   };
+  const handleFinancialReport = () =>{
+    setIsMenu(false);
+  }
 
   return (
     <Fragment>
@@ -207,6 +210,8 @@ const SideBar = ({ setIsMenu }) => {
             <p className="menu-title">Student Progression</p>
           </NavLink>
 
+          <p className="menu-title module">Generate Report</p>
+
           {/* REPORT NAVIGATION */}
           <SimpleTreeView sx={{ fontSize: "6.2rem" }}>
             <TreeItem
@@ -229,6 +234,15 @@ const SideBar = ({ setIsMenu }) => {
               />
             </TreeItem>
           </SimpleTreeView>
+
+          <NavLink
+            className="sidebar-menu"
+            to="/financial-report"
+            onClick={handleFinancialReport}
+          >
+            <PiChalkboardTeacherThin size={20} />{" "}
+            <p className="menu-title">Financial Report</p>
+          </NavLink>
 
           <p className="menu-title module">Employee Module</p>
 
