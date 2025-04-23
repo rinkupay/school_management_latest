@@ -11,7 +11,7 @@ app.use('/images', express.static(path.join(__dirname, 'images')));
 
 // Use of Cors
 app.use(cors({
-    origin: ["http://localhost:5173","https://school-management-1-4bjb.onrender.com","https://school-management-latest-1.onrender.com"],
+    origin: ["http://localhost:5173","https://school-management-1-4bjb.onrender.com","https://school-management-latest-1.onrender.com","https://school-management-latest.vercel.app"],
     methods:["POST","GET","DELETE","PUT","PATCH"],
     credentials: true
 }));
